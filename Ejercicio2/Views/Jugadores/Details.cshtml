@@ -1,0 +1,60 @@
+﻿@model Ejercicio2.Models.Jugador
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Jugador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaNac)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaNac)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Posicion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Posicion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Club)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Club)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSelNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdSelNavigation.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
